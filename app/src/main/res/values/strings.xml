@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">adfs-authentication</string>
+    <string name="TextLogin">Login</string>
+</resources>

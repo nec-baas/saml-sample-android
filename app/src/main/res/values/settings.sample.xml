@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="EndpointUri">https://baas.example.com/api/</string>
+    <string name="TenantId"></string>
+    <string name="Scheme">sampleapp1</string>
+    <string name="Host">saml_callback</string>
+    <string name="AppId"></string>
+    <string name="AppKey"></string>
+    <string name="SSL_Self_Signed">false</string>
+    <string name="DebugMode">true</string>
+</resources>

@@ -1,0 +1,53 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+apply plugin: 'com.android.application'
+
+repositories {
+    mavenCentral()
+    google()
+    jcenter()
+}
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        applicationId "com.nec.baas.adfs_authentication"
+        minSdkVersion 23
+        targetSdkVersion 27
+        versionCode 1
+        versionName "7.0.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude 'AndroidManifest.xml'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'LICENSE.txt'
+        exclude 'LICENSE'
+    }
+
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation 'com.nec.baas:baas-client-android:7.0.0'
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.6'
+}
